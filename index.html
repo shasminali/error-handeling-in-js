@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>errors in JavaScript.</h2>
+        <p>JavaScript errors are common and can be frustrating to debug.</p>
+        <p id="error_mesage"></p>
+        <script>
+            try {
+                // Intentionally cause an error by calling an undefined function
+                myFunction();
+            } catch (err) {
+                document.getElementById("error_mesage").innerHTML = "Error message: " + err.message;
+            }
+        </script>
+    </body>
+</html>
